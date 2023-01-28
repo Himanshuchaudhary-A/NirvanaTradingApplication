@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8FBE099-776C-4CBE-BA72-483CE3B54E5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NirvanaTradingApplication</RootNamespace>
+    <AssemblyName>NirvanaTradingApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v20.2, Version=20.2.20202.30, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v20.2, Version=20.2.20202.30, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v20.2, Version=20.2.20202.30, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v20.2, Version=20.2.20202.30, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v20.2, Version=20.2.20202.30, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Allocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allocation.Designer.cs">
+      <DependentUpon>Allocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Blotter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blotter.Designer.cs">
+      <DependentUpon>Blotter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlotterRightClickMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlotterRightClickMenu.Designer.cs">
+      <DependentUpon>BlotterRightClickMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorMessage.Designer.cs">
+      <DependentUpon>ErrorMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSuccessful.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSuccessful.Designer.cs">
+      <DependentUpon>LoginSuccessful.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NIrvana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIrvana.Designer.cs">
+      <DependentUpon>NIrvana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NirvanaTradingApplicationDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NirvanaTradingApplicationDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuccessMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuccessMessage.Designer.cs">
+      <DependentUpon>SuccessMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TradingTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TradingTicket.Designer.cs">
+      <DependentUpon>TradingTicket.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Allocation.resx">
+      <DependentUpon>Allocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blotter.resx">
+      <DependentUpon>Blotter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlotterRightClickMenu.resx">
+      <DependentUpon>BlotterRightClickMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorMessage.resx">
+      <DependentUpon>ErrorMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSuccessful.resx">
+      <DependentUpon>LoginSuccessful.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIrvana.resx">
+      <DependentUpon>NIrvana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SuccessMessage.resx">
+      <DependentUpon>SuccessMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TradingTicket.resx">
+      <DependentUpon>TradingTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NirvanaTradingApplicationDatabaseDataSet.xsc">
+      <DependentUpon>NirvanaTradingApplicationDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NirvanaTradingApplicationDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NirvanaTradingApplicationDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NirvanaTradingApplicationDatabaseDataSet.xss">
+      <DependentUpon>NirvanaTradingApplicationDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NirvanaTradingApplicationDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NirvanaTradingApplicationDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>NirvanaTradingApplicationDatabase.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
